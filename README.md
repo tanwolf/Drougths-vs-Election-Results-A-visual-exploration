@@ -1,6 +1,7 @@
 # Final Project Drougths vs Election Results - A visual exploration
 
 Project Description
+
 The goal of this project is to explore data visually in order to conclude whether a hypothesis could be formulated. The data depicts two unrelated kinds of datasets: Firstly, national data on the occurrence of droughts. Secondly, data on national election results. Is it possible to hypothesize about correlation and causation? The goal of this project will be achieved by projecting drought data and election results on maps  of Germany and the USA.
 
 Dataset / Source
