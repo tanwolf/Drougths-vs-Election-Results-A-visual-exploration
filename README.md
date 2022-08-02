@@ -26,6 +26,9 @@ https://catalog.data.gov/dataset/united-states-drought-monitor-2000-2016
 Presedential Elections, result by county:
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ
 
+Global Monthly Burned Area (2002-2019) (values by region)
+https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads
+
 Data sub-fields:
 
 Business Intelligence (Dashboarding, interactive viz)
