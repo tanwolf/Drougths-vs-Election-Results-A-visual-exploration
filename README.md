@@ -4,7 +4,7 @@ Project Description
 
 Is there a connection between the occurence of local droughts, wildfires and the way people vote in national elections?
 
-The goal of this project is to triangulate unrelated data from different sources and to explore it visually. Is it possible to draw conclusions from these visualizations? Is there a difference between countries? 
+The goal of this project is to triangulate unrelated data from different sources and to explore it visually. Is it possible to draw conclusions from these visualizations? Is it possible to formulate a hypothesis? Is there a pattern in the way people vote when they experience drought and wildfires? Is there a difference between countries? 
 
 This project uses tableau and suggests a way of visualizing respective data in animated filled maps and interactive scatterplots. 
 
