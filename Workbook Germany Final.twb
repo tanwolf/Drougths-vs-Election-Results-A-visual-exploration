@@ -1,0 +1,1005 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Geometrie_Wahlkreise_20DBT_VG250_geo.shp+ (Multiple Connections)' inline='true' name='federated.0c3hath1a3td2h1d8mqvb01p24l2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Geometrie_Wahlkreise_20DBT_VG250_geo' name='ogrdirect.0l2zc3q0ikv5sp12821gu1e2c6n2'>
+            <connection class='ogrdirect' directory='C:/Users/Tanja/Documents/Repo Final Project/Final-Project-Drougths-vs-Election-Results---A-visual-exploration/Data/geometrie wahlkreise vg250' filename='Geometrie_Wahlkreise_20DBT_VG250_geo.shp' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='bundestag_election_3' name='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi'>
+            <connection class='textscan' directory='C:/Users/Tanja/Documents/Repo Final Project/Final-Project-Drougths-vs-Election-Results---A-visual-exploration/Data' filename='bundestag_election_3.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.0l2zc3q0ikv5sp12821gu1e2c6n2' name='Geometrie_Wahlkreise_20DBT_VG250_geo.shp' table='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='WKR_NR' ordinal='0' />
+            <column datatype='string' name='WKR_NAME' ordinal='1' />
+            <column datatype='string' name='LAND_NR' ordinal='2' />
+            <column datatype='string' name='LAND_NAME' ordinal='3' />
+            <column datatype='spatial' name='Geometry' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='ogrdirect.0l2zc3q0ikv5sp12821gu1e2c6n2' name='Geometrie_Wahlkreise_20DBT_VG250_geo.shp' table='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]' type='table'>
+            <columns>
+              <column datatype='integer' name='WKR_NR' ordinal='0' />
+              <column datatype='string' name='WKR_NAME' ordinal='1' />
+              <column datatype='string' name='LAND_NR' ordinal='2' />
+              <column datatype='string' name='LAND_NAME' ordinal='3' />
+              <column datatype='spatial' name='Geometry' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi' name='bundestag_election_3.csv' table='[bundestag_election_3#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='de_DE'>
+              <column datatype='integer' name='year' ordinal='0' />
+              <column datatype='integer' name='district_number' ordinal='1' />
+              <column datatype='string' name='name' ordinal='2' />
+              <column datatype='real' name='SPD' ordinal='3' />
+              <column datatype='real' name='CDU' ordinal='4' />
+              <column datatype='real' name='CSU' ordinal='5' />
+              <column datatype='real' name='GRUENE' ordinal='6' />
+              <column datatype='real' name='FDP' ordinal='7' />
+              <column datatype='real' name='PDS_LINKE' ordinal='8' />
+              <column datatype='real' name='AFD' ordinal='9' />
+              <column datatype='string' name='result' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi' name='droughtmagnitude_2000-2020.csv' table='[droughtmagnitude_2000-2020#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='de_DE' separator=';'>
+              <column datatype='integer' name='electoral_district_nr' ordinal='0' />
+              <column datatype='string' name='electoral_district_name' ordinal='1' />
+              <column datatype='integer' name='federal_state_nr' ordinal='2' />
+              <column datatype='string' name='federal_state_name' ordinal='3' />
+              <column datatype='integer' name='drought_index_per_district' ordinal='4' />
+              <column datatype='integer' name='Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi' name='burned_area_germany.csv' table='[burned_area_germany#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='de_DE' separator=';'>
+              <column datatype='string' name='State' ordinal='0' />
+              <column datatype='integer' name='Year' ordinal='1' />
+              <column datatype='integer' name='combined_BA' ordinal='2' />
+              <column datatype='integer' name='Cropland_BA_hectares' ordinal='3' />
+              <column datatype='integer' name='Forest_BA_hectares' ordinal='4' />
+              <column datatype='integer' name='Grass_and_Shrubland_BA_hectares' ordinal='5' />
+              <column datatype='integer' name='Wetlands_BA_hectares' ordinal='6' />
+              <column datatype='integer' name='Settlement_BA_hectares' ordinal='7' />
+              <column datatype='integer' name='Other_BA_hectares' ordinal='8' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[AFD]' value='[bundestag_election_3.csv].[AFD]' />
+          <map key='[CDU]' value='[bundestag_election_3.csv].[CDU]' />
+          <map key='[CSU]' value='[bundestag_election_3.csv].[CSU]' />
+          <map key='[Cropland_BA_hectares]' value='[burned_area_germany.csv].[Cropland_BA_hectares]' />
+          <map key='[FDP]' value='[bundestag_election_3.csv].[FDP]' />
+          <map key='[Forest_BA_hectares]' value='[burned_area_germany.csv].[Forest_BA_hectares]' />
+          <map key='[GRUENE]' value='[bundestag_election_3.csv].[GRUENE]' />
+          <map key='[Geometry]' value='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp].[Geometry]' />
+          <map key='[Grass_and_Shrubland_BA_hectares]' value='[burned_area_germany.csv].[Grass_and_Shrubland_BA_hectares]' />
+          <map key='[LAND_NAME]' value='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp].[LAND_NAME]' />
+          <map key='[LAND_NR]' value='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp].[LAND_NR]' />
+          <map key='[Other_BA_hectares]' value='[burned_area_germany.csv].[Other_BA_hectares]' />
+          <map key='[PDS_LINKE]' value='[bundestag_election_3.csv].[PDS_LINKE]' />
+          <map key='[SPD]' value='[bundestag_election_3.csv].[SPD]' />
+          <map key='[Settlement_BA_hectares]' value='[burned_area_germany.csv].[Settlement_BA_hectares]' />
+          <map key='[State]' value='[burned_area_germany.csv].[State]' />
+          <map key='[WKR_NAME]' value='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp].[WKR_NAME]' />
+          <map key='[WKR_NR]' value='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp].[WKR_NR]' />
+          <map key='[Wetlands_BA_hectares]' value='[burned_area_germany.csv].[Wetlands_BA_hectares]' />
+          <map key='[Year (burned_area_germany.csv)]' value='[burned_area_germany.csv].[Year]' />
+          <map key='[Year]' value='[droughtmagnitude_2000-2020.csv].[Year]' />
+          <map key='[combined_BA]' value='[burned_area_germany.csv].[combined_BA]' />
+          <map key='[district_number]' value='[bundestag_election_3.csv].[district_number]' />
+          <map key='[drought_index_per_district]' value='[droughtmagnitude_2000-2020.csv].[drought_index_per_district]' />
+          <map key='[electoral_district_name]' value='[droughtmagnitude_2000-2020.csv].[electoral_district_name]' />
+          <map key='[electoral_district_nr]' value='[droughtmagnitude_2000-2020.csv].[electoral_district_nr]' />
+          <map key='[federal_state_name]' value='[droughtmagnitude_2000-2020.csv].[federal_state_name]' />
+          <map key='[federal_state_nr]' value='[droughtmagnitude_2000-2020.csv].[federal_state_nr]' />
+          <map key='[name]' value='[bundestag_election_3.csv].[name]' />
+          <map key='[result]' value='[bundestag_election_3.csv].[result]' />
+          <map key='[year]' value='[bundestag_election_3.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WKR_NR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WKR_NR]</local-name>
+            <parent-name>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]</parent-name>
+            <remote-alias>WKR_NR</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WKR_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WKR_NAME]</local-name>
+            <parent-name>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]</parent-name>
+            <remote-alias>WKR_NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND_NR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAND_NR]</local-name>
+            <parent-name>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]</parent-name>
+            <remote-alias>LAND_NR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAND_NAME]</local-name>
+            <parent-name>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]</parent-name>
+            <remote-alias>LAND_NAME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[district_number]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>district_number</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SPD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SPD]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>SPD</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CDU</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CDU]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>CDU</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CSU</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CSU]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>CSU</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GRUENE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GRUENE]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>GRUENE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FDP]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>FDP</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PDS_LINKE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PDS_LINKE]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>PDS_LINKE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AFD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AFD]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>AFD</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result]</local-name>
+            <parent-name>[bundestag_election_3.csv]</parent-name>
+            <remote-alias>result</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>electoral_district_nr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[electoral_district_nr]</local-name>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias>electoral_district_nr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>electoral_district_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[electoral_district_name]</local-name>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias>electoral_district_name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>federal_state_nr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[federal_state_nr]</local-name>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias>federal_state_nr</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>federal_state_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[federal_state_name]</local-name>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias>federal_state_name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drought_index_per_district</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[drought_index_per_district]</local-name>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias>drought_index_per_district</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[droughtmagnitude_2000-2020.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (burned_area_germany.csv)]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combined_BA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[combined_BA]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>combined_BA</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cropland_BA_hectares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cropland_BA_hectares]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Cropland_BA_hectares</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forest_BA_hectares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Forest_BA_hectares]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Forest_BA_hectares</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grass_and_Shrubland_BA_hectares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Grass_and_Shrubland_BA_hectares]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Grass_and_Shrubland_BA_hectares</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wetlands_BA_hectares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wetlands_BA_hectares]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Wetlands_BA_hectares</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Settlement_BA_hectares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Settlement_BA_hectares]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Settlement_BA_hectares</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_BA_hectares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other_BA_hectares]</local-name>
+            <parent-name>[burned_area_germany.csv]</parent-name>
+            <remote-alias>Other_BA_hectares</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cropland BA hectares' datatype='integer' name='[Cropland_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Forest BA hectares' datatype='integer' name='[Forest_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Gruene' datatype='real' name='[GRUENE]' role='measure' type='quantitative' />
+      <column caption='Grass and Shrubland BA hectares' datatype='integer' name='[Grass_and_Shrubland_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Land Name' datatype='string' name='[LAND_NAME]' role='dimension' type='nominal' />
+      <column caption='Land Nr' datatype='string' name='[LAND_NR]' role='dimension' type='nominal' />
+      <column caption='Other BA hectares' datatype='integer' name='[Other_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Pds Linke' datatype='real' name='[PDS_LINKE]' role='measure' type='quantitative' />
+      <column caption='Settlement BA hectares' datatype='integer' name='[Settlement_BA_hectares]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Wkr Name' datatype='string' name='[WKR_NAME]' role='dimension' type='nominal' />
+      <column caption='Wkr Nr' datatype='integer' name='[WKR_NR]' role='dimension' type='ordinal' />
+      <column caption='Wetlands BA hectares' datatype='integer' name='[Wetlands_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Year (burned area germany.csv)' datatype='integer' name='[Year (burned_area_germany.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Geometrie_Wahlkreise_20DBT_VG250_geo.shp' datatype='table' name='[__tableau_internal_object_id__].[Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='bundestag_election_3.csv' datatype='table' name='[__tableau_internal_object_id__].[bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='burned_area_germany.csv' datatype='table' name='[__tableau_internal_object_id__].[burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='droughtmagnitude_2000-2020.csv' datatype='table' name='[__tableau_internal_object_id__].[droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D]' role='measure' type='quantitative' />
+      <column caption='combined BA' datatype='integer' name='[combined_BA]' role='measure' type='quantitative' />
+      <column caption='District Number' datatype='integer' name='[district_number]' role='dimension' type='ordinal' />
+      <column caption='Drought Index Per District' datatype='integer' name='[drought_index_per_district]' role='measure' type='quantitative' />
+      <column caption='Electoral District Name' datatype='string' name='[electoral_district_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Electoral District Nr' datatype='integer' name='[electoral_district_nr]' role='dimension' type='ordinal' />
+      <column caption='Federal State Name' datatype='string' name='[federal_state_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Federal State Nr' datatype='integer' name='[federal_state_nr]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Geometrie_Wahlkreise_20DBT_VG250_geo.shp' id='Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40'>
+            <properties context=''>
+              <relation connection='ogrdirect.0l2zc3q0ikv5sp12821gu1e2c6n2' name='Geometrie_Wahlkreise_20DBT_VG250_geo.shp' table='[Geometrie_Wahlkreise_20DBT_VG250_geo.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='WKR_NR' ordinal='0' />
+                  <column datatype='string' name='WKR_NAME' ordinal='1' />
+                  <column datatype='string' name='LAND_NR' ordinal='2' />
+                  <column datatype='string' name='LAND_NAME' ordinal='3' />
+                  <column datatype='spatial' name='Geometry' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='bundestag_election_3.csv' id='bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0'>
+            <properties context=''>
+              <relation connection='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi' name='bundestag_election_3.csv' table='[bundestag_election_3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='district_number' ordinal='1' />
+                  <column datatype='string' name='name' ordinal='2' />
+                  <column datatype='real' name='SPD' ordinal='3' />
+                  <column datatype='real' name='CDU' ordinal='4' />
+                  <column datatype='real' name='CSU' ordinal='5' />
+                  <column datatype='real' name='GRUENE' ordinal='6' />
+                  <column datatype='real' name='FDP' ordinal='7' />
+                  <column datatype='real' name='PDS_LINKE' ordinal='8' />
+                  <column datatype='real' name='AFD' ordinal='9' />
+                  <column datatype='string' name='result' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='burned_area_germany.csv' id='burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1'>
+            <properties context=''>
+              <relation connection='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi' name='burned_area_germany.csv' table='[burned_area_germany#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE' separator=';'>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='combined_BA' ordinal='2' />
+                  <column datatype='integer' name='Cropland_BA_hectares' ordinal='3' />
+                  <column datatype='integer' name='Forest_BA_hectares' ordinal='4' />
+                  <column datatype='integer' name='Grass_and_Shrubland_BA_hectares' ordinal='5' />
+                  <column datatype='integer' name='Wetlands_BA_hectares' ordinal='6' />
+                  <column datatype='integer' name='Settlement_BA_hectares' ordinal='7' />
+                  <column datatype='integer' name='Other_BA_hectares' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='droughtmagnitude_2000-2020.csv' id='droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D'>
+            <properties context=''>
+              <relation connection='textscan.0j6cz5x142n0yn1fhqcrc0rsk9yi' name='droughtmagnitude_2000-2020.csv' table='[droughtmagnitude_2000-2020#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='de_DE' separator=';'>
+                  <column datatype='integer' name='electoral_district_nr' ordinal='0' />
+                  <column datatype='string' name='electoral_district_name' ordinal='1' />
+                  <column datatype='integer' name='federal_state_nr' ordinal='2' />
+                  <column datatype='string' name='federal_state_name' ordinal='3' />
+                  <column datatype='integer' name='drought_index_per_district' ordinal='4' />
+                  <column datatype='integer' name='Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[WKR_NR]' />
+              <expression op='[district_number]' />
+            </expression>
+            <first-end-point object-id='Geometrie_Wahlkreise_20DBT_VG250_geo.shp_C5F7040D49AC47FF8F7E4AA6DE439A40' />
+            <second-end-point object-id='bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[federal_state_name]' />
+              <expression op='[State]' />
+            </expression>
+            <first-end-point object-id='droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D' />
+            <second-end-point object-id='burned_area_germany.csv_83FDBF4EC9F1406395C3A520BDAB2AE1' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[district_number]' />
+              <expression op='[electoral_district_nr]' />
+            </expression>
+            <first-end-point object-id='bundestag_election_3.csv_2583CDFB1EFF48B6A6A5277F443505E0' />
+            <second-end-point object-id='droughtmagnitude_2000-2020.csv_F1F31D56F45E49C7B41042AE0914CF6D' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Geometrie_Wahlkreise_20DBT_VG250_geo.shp+ (Multiple Connections)' name='federated.0c3hath1a3td2h1d8mqvb01p24l2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c3hath1a3td2h1d8mqvb01p24l2'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[combined_BA]' derivation='Avg' name='[avg:combined_BA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[drought_index_per_district]' derivation='Avg' name='[avg:drought_index_per_district:qk]' pivot='key' type='quantitative' />
+            <column caption='combined BA' datatype='integer' name='[combined_BA]' role='measure' type='quantitative' />
+            <column caption='Drought Index Per District' datatype='integer' name='[drought_index_per_district]' role='measure' type='quantitative' />
+            <column caption='Electoral District Name' datatype='string' name='[electoral_district_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[electoral_district_name]' derivation='None' name='[none:electoral_district_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[result]' derivation='None' name='[none:result:nk]' pivot='key' type='nominal' />
+            <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:result:nk]' />
+              <lod column='[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:State:nk]' />
+              <lod column='[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:electoral_district_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='126' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c3hath1a3td2h1d8mqvb01p24l2].[avg:combined_BA:qk]</rows>
+        <cols>[federated.0c3hath1a3td2h1d8mqvb01p24l2].[avg:drought_index_per_district:qk]</cols>
+      </table>
+      <simple-id uuid='{C6AB5E2B-8C03-4F6D-BABF-C55B1F73342B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:result:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:State:nk]</field>
+            <field>[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:electoral_district_name:nk]</field>
+            <field>[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:federal_state_name:nk]</field>
+            <field>[federated.0c3hath1a3td2h1d8mqvb01p24l2].[none:result:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41E574ED-2E40-48DF-AF9C-172747807A65}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

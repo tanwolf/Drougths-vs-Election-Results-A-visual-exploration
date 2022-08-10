@@ -1,0 +1,1751 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='firetypes' inline='true' name='federated.1ifa75414temgr0ziqx7z057y6ys' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='firetypes' name='textscan.0abekts08gv1km1fy9gfk1qhg2nd'>
+            <connection class='textscan' directory='C:/Users/Tanja/Downloads' filename='firetypes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0abekts08gv1km1fy9gfk1qhg2nd' name='firetypes.csv' table='[firetypes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator=';'>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='2' />
+            <column datatype='string' name='party' ordinal='3' />
+            <column datatype='integer' name='county_fips' ordinal='4' />
+            <column datatype='real' name='Cropland_BA_hectares' ordinal='5' />
+            <column datatype='real' name='Forest_BA_hectares' ordinal='6' />
+            <column datatype='real' name='Grass_and_Shrubland_BA_hectares' ordinal='7' />
+            <column datatype='real' name='Wetlands_BA_hectares' ordinal='8' />
+            <column datatype='real' name='Settlement_BA_hectares' ordinal='9' />
+            <column datatype='real' name='Other_BA_hectares' ordinal='10' />
+            <column datatype='real' name='Cropland_BA_hectares_index' ordinal='11' />
+            <column datatype='real' name='Forest_BA_hectares_index' ordinal='12' />
+            <column datatype='real' name='Grass_and_Shrubland_BA_hectares_index' ordinal='13' />
+            <column datatype='real' name='Wetlands_BA_hectares_index' ordinal='14' />
+            <column datatype='real' name='Settlement_BA_hectares_index' ordinal='15' />
+            <column datatype='real' name='Other_BA_hectares_index' ordinal='16' />
+            <column datatype='real' name='index' ordinal='17' />
+            <column datatype='real' name='value' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0abekts08gv1km1fy9gfk1qhg2nd' name='firetypes.csv' table='[firetypes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator=';'>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='string' name='county' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='2' />
+            <column datatype='string' name='party' ordinal='3' />
+            <column datatype='integer' name='county_fips' ordinal='4' />
+            <column datatype='real' name='Cropland_BA_hectares' ordinal='5' />
+            <column datatype='real' name='Forest_BA_hectares' ordinal='6' />
+            <column datatype='real' name='Grass_and_Shrubland_BA_hectares' ordinal='7' />
+            <column datatype='real' name='Wetlands_BA_hectares' ordinal='8' />
+            <column datatype='real' name='Settlement_BA_hectares' ordinal='9' />
+            <column datatype='real' name='Other_BA_hectares' ordinal='10' />
+            <column datatype='real' name='Cropland_BA_hectares_index' ordinal='11' />
+            <column datatype='real' name='Forest_BA_hectares_index' ordinal='12' />
+            <column datatype='real' name='Grass_and_Shrubland_BA_hectares_index' ordinal='13' />
+            <column datatype='real' name='Wetlands_BA_hectares_index' ordinal='14' />
+            <column datatype='real' name='Settlement_BA_hectares_index' ordinal='15' />
+            <column datatype='real' name='Other_BA_hectares_index' ordinal='16' />
+            <column datatype='real' name='index' ordinal='17' />
+            <column datatype='real' name='value' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>party</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[party]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>party</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[county_fips]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>county_fips</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cropland_BA_hectares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cropland_BA_hectares]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Cropland_BA_hectares</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forest_BA_hectares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Forest_BA_hectares]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Forest_BA_hectares</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grass_and_Shrubland_BA_hectares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Grass_and_Shrubland_BA_hectares]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Grass_and_Shrubland_BA_hectares</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wetlands_BA_hectares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wetlands_BA_hectares]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Wetlands_BA_hectares</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Settlement_BA_hectares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Settlement_BA_hectares]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Settlement_BA_hectares</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_BA_hectares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other_BA_hectares]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Other_BA_hectares</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cropland_BA_hectares_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cropland_BA_hectares_index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Cropland_BA_hectares_index</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forest_BA_hectares_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Forest_BA_hectares_index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Forest_BA_hectares_index</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grass_and_Shrubland_BA_hectares_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Grass_and_Shrubland_BA_hectares_index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Grass_and_Shrubland_BA_hectares_index</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wetlands_BA_hectares_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wetlands_BA_hectares_index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Wetlands_BA_hectares_index</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Settlement_BA_hectares_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Settlement_BA_hectares_index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Settlement_BA_hectares_index</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_BA_hectares_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other_BA_hectares_index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>Other_BA_hectares_index</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[firetypes.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Burned Croplands in Hectares' datatype='real' name='[Cropland_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Burned Croplands in Relation to State Size' datatype='real' name='[Cropland_BA_hectares_index]' role='measure' type='quantitative' />
+      <column caption='Burned Forests in Hectares' datatype='real' name='[Forest_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Burned Forest in Relation to State Size' datatype='real' name='[Forest_BA_hectares_index]' role='measure' type='quantitative' />
+      <column caption='Burned Grass and Shrubland in Hectares' datatype='real' name='[Grass_and_Shrubland_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Burned Grass and Shrubland in Relation to State Size' datatype='real' name='[Grass_and_Shrubland_BA_hectares_index]' role='measure' type='quantitative' />
+      <column caption='Burned Hectars of Other Firetypes' datatype='real' name='[Other_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Burned Hectars Other Firetypes in Relation to State Size' datatype='real' name='[Other_BA_hectares_index]' role='measure' type='quantitative' />
+      <column caption='Burned Settlements in Hectares' datatype='real' name='[Settlement_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Burned Settlements in Relation to State Size' datatype='real' name='[Settlement_BA_hectares_index]' role='measure' type='quantitative' />
+      <column caption='Burned Wetlands in Hectares' datatype='real' name='[Wetlands_BA_hectares]' role='measure' type='quantitative' />
+      <column caption='Burned Wetlands in Relation to State Size' datatype='real' name='[Wetlands_BA_hectares_index]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='firetypes.csv' datatype='table' name='[__tableau_internal_object_id__].[firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County Fips' datatype='integer' name='[county_fips]' role='measure' type='quantitative' />
+      <column caption='Total Burned Area of State in Relation to State Size' datatype='real' name='[index]' role='measure' type='quantitative' />
+      <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='state, county'>
+          <field>[state]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:party:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;DEMOCRAT&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;REPUBLICAN&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='firetypes.csv' id='firetypes.csv_B73804EC4C9A4D65B208EB3C47886A34'>
+            <properties context=''>
+              <relation connection='textscan.0abekts08gv1km1fy9gfk1qhg2nd' name='firetypes.csv' table='[firetypes#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE' separator=';'>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='string' name='county' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='year' ordinal='2' />
+                  <column datatype='string' name='party' ordinal='3' />
+                  <column datatype='integer' name='county_fips' ordinal='4' />
+                  <column datatype='real' name='Cropland_BA_hectares' ordinal='5' />
+                  <column datatype='real' name='Forest_BA_hectares' ordinal='6' />
+                  <column datatype='real' name='Grass_and_Shrubland_BA_hectares' ordinal='7' />
+                  <column datatype='real' name='Wetlands_BA_hectares' ordinal='8' />
+                  <column datatype='real' name='Settlement_BA_hectares' ordinal='9' />
+                  <column datatype='real' name='Other_BA_hectares' ordinal='10' />
+                  <column datatype='real' name='Cropland_BA_hectares_index' ordinal='11' />
+                  <column datatype='real' name='Forest_BA_hectares_index' ordinal='12' />
+                  <column datatype='real' name='Grass_and_Shrubland_BA_hectares_index' ordinal='13' />
+                  <column datatype='real' name='Wetlands_BA_hectares_index' ordinal='14' />
+                  <column datatype='real' name='Settlement_BA_hectares_index' ordinal='15' />
+                  <column datatype='real' name='Other_BA_hectares_index' ordinal='16' />
+                  <column datatype='real' name='index' ordinal='17' />
+                  <column datatype='real' name='value' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Burned Area Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column-instance column='[index]' derivation='Avg' name='[avg:index:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Burned Area of State in Relation to State Size' datatype='real' name='[index]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]' field-type='quantitative' max='32729109.082327358' min='20154455.90250621' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]' field-type='quantitative' max='12171441.712851834' min='2347493.9161165617' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:index:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:index:qk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{34219A60-054B-4346-A46A-B55D0D77A0FE}' />
+    </worksheet>
+    <worksheet name='Burned Cropland'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Croplands in Relation to State Size' datatype='real' name='[Cropland_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Cropland_BA_hectares_index]' derivation='Avg' name='[avg:Cropland_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='116' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Cropland_BA_hectares_index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{AFDE110E-5C37-4BAF-88B8-D92948D146AE}' />
+    </worksheet>
+    <worksheet name='Burned Cropland Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Croplands in Relation to State Size' datatype='real' name='[Cropland_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Cropland_BA_hectares_index]' derivation='Avg' name='[avg:Cropland_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Cropland_BA_hectares_index:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Cropland_BA_hectares_index:qk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{493B549F-322B-43DF-8A5C-9345E658A905}' />
+    </worksheet>
+    <worksheet name='Burned Forest Area'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Forest in Relation to State Size' datatype='real' name='[Forest_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Forest_BA_hectares_index]' derivation='Avg' name='[avg:Forest_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='142' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Forest_BA_hectares_index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{3BAF0335-B910-4898-8C0B-413E5FB4BA29}' />
+    </worksheet>
+    <worksheet name='Burned Forest Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Forest in Relation to State Size' datatype='real' name='[Forest_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Forest_BA_hectares_index]' derivation='Avg' name='[avg:Forest_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Forest_BA_hectares_index:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Forest_BA_hectares_index:qk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{17304CDF-D8C5-4DFC-B29F-BD80A8D02355}' />
+    </worksheet>
+    <worksheet name='Burned Grassland'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Grass and Shrubland in Relation to State Size' datatype='real' name='[Grass_and_Shrubland_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Grass_and_Shrubland_BA_hectares_index]' derivation='Avg' name='[avg:Grass_and_Shrubland_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='96' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Grass_and_Shrubland_BA_hectares_index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{1173217B-78A9-402B-912F-A2B7FF9B33D8}' />
+    </worksheet>
+    <worksheet name='Burned Grassland Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Grass and Shrubland in Relation to State Size' datatype='real' name='[Grass_and_Shrubland_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Grass_and_Shrubland_BA_hectares_index]' derivation='Avg' name='[avg:Grass_and_Shrubland_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]' field-type='quantitative' max='32002075.845260091' min='23296308.195260197' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]' field-type='quantitative' max='6735503.9646837451' min='-65877.011878670193' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Grass_and_Shrubland_BA_hectares_index:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Grass_and_Shrubland_BA_hectares_index:qk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{DCECCE22-96D7-40E0-9C4E-9651A6423689}' />
+    </worksheet>
+    <worksheet name='Burned Settlements'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Settlements in Relation to State Size' datatype='real' name='[Settlement_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Settlement_BA_hectares_index]' derivation='Avg' name='[avg:Settlement_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='80' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Settlement_BA_hectares_index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{F81A711E-1EBB-4B4E-8FF8-F702BBE35A70}' />
+    </worksheet>
+    <worksheet name='Burned Settlements Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Settlements in Relation to State Size' datatype='real' name='[Settlement_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Settlement_BA_hectares_index]' derivation='Sum' name='[sum:Settlement_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[sum:Settlement_BA_hectares_index:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[sum:Settlement_BA_hectares_index:qk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{37D28BC2-40B6-498A-9EB4-2237AAC3C328}' />
+    </worksheet>
+    <worksheet name='Burned Wetlands'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Wetlands in Relation to State Size' datatype='real' name='[Wetlands_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Wetlands_BA_hectares_index]' derivation='Avg' name='[avg:Wetlands_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='103' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Wetlands_BA_hectares_index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{DE1DBDBC-B7E3-49F0-92E6-C7D5EE14FE8D}' />
+    </worksheet>
+    <worksheet name='Drought Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]' field-type='quantitative' max='-7006884.8046282455' min='-15860492.302553304' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]' field-type='quantitative' max='7720991.2713443441' min='1625833.5586492391' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[sum:value:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[sum:value:qk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{B5EA7EB5-D0EE-47B3-AF40-13DE98793BF2}' />
+    </worksheet>
+    <worksheet name='Election Results Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]' field-type='quantitative' max='-7933731.7317537032' min='-21211716.086777501' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]' field-type='quantitative' max='7976310.6617984297' min='-1164755.1432460623' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+              <geometry column='[federated.1ifa75414temgr0ziqx7z057y6ys].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{C812CD6E-BD63-4A02-9696-0BB599EBCD55}' />
+    </worksheet>
+    <worksheet name='Other Burned Area'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column caption='Burned Hectars Other Firetypes in Relation to State Size' datatype='real' name='[Other_BA_hectares_index]' role='measure' type='quantitative' />
+            <column-instance column='[Other_BA_hectares_index]' derivation='Avg' name='[avg:Other_BA_hectares_index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='103' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Other_BA_hectares_index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{BA505AB0-ABCC-4ACB-9A81-3E0C4D03A4DA}' />
+    </worksheet>
+    <worksheet name='Total Burned Area'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='firetypes' name='federated.1ifa75414temgr0ziqx7z057y6ys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ifa75414temgr0ziqx7z057y6ys'>
+            <column-instance column='[index]' derivation='Avg' name='[avg:index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Total Burned Area of State in Relation to State Size' datatype='real' name='[index]' role='measure' type='quantitative' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Soil Moisture' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:state:nk]' />
+              <lod column='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='165' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:index:qk]</rows>
+        <cols>[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:value:qk]</cols>
+        <pages>
+          <column>[federated.1ifa75414temgr0ziqx7z057y6ys].[tyr:year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{18A329E6-4AA7-44BF-90D5-AD5653ECCD08}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Droughts, Wildfires and Elections: 2004-2016</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='8' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4253' id='9' type-v2='title' w='98426' x='787' y='830'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94087' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='5083'>
+              <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5083' />
+              <zone h='83610' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15560'>
+                <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                  <story-points>
+                    <story-point caption='Animated Map of Droughts during Election Years' captured-sheet='Drought Map' id='1'>
+                      <capturedDeltas>
+                        <worksheet name='Drought Map'>
+                          <style delta-type='added'>
+                            <style-rule element='axis'>
+                              <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]' field-type='quantitative' max='8546951.639706105' min='443666.35821271513' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                              <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]' field-type='quantitative' max='-7284709.136679193' min='-15652342.286723578' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                            </style-rule>
+                          </style>
+                        </worksheet>
+                      </capturedDeltas>
+                    </story-point>
+                    <story-point caption='Animated Map of Wildfires During Election Years' captured-sheet='Burned Area Map' id='2' />
+                    <story-point caption='Animated Map of  Presidential Election Results per County ' captured-sheet='Election Results Map' id='3'>
+                      <capturedDeltas>
+                        <worksheet name='Election Results Map'>
+                          <style delta-type='added'>
+                            <style-rule element='axis'>
+                              <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Latitude (generated)]' field-type='quantitative' max='10434588.174746633' min='329481.46648617927' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                              <encoding attr='space' class='0' field='[federated.1ifa75414temgr0ziqx7z057y6ys].[Longitude (generated)]' field-type='quantitative' max='-6905571.5189193264' min='-17340330.130946487' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                            </style-rule>
+                          </style>
+                        </worksheet>
+                      </capturedDeltas>
+                    </story-point>
+                    <story-point caption='Counties during Election Years: drought value, burned area, election results' captured-sheet='Total Burned Area' id='4' />
+                  </story-points>
+                </flipboard>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='59544' hidden='true' id='6' story-point-id='4' type-v2='text' w='20472' x='79823' y='36100'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontsize='12'>Description of Axes:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='12'>Low soil moisture means high drought.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='12'>In the bottom right corner (Soil moisture = 9, Burned Area= 0%) counties with no droughts would be located which belong to a state with no burned area. </run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontsize='12'>In the upper left corner counties with high drought would be located which  belong to a state with a high percentage of burned area in 2016. </run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run bold='true' fontalignment='0' fontsize='12'>Outliers: </run>
+            <run fontalignment='0' fontsize='12'>states with many wildfires while soil is not particularly dry. Especially Kansas which has a Burned Area of 2,7% of the state&apos;s total area.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='32676' id='10' story-point-id='1' type-v2='text' w='17126' x='82972' y='64212'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Source:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Centers for Disease Control and Prevention. National Environmental Public Health Tracking Network. Web. Accessed: 27 July 2022. </run>
+            <run fontalignment='0' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='12' underline='true'>www.cdc.gov/ephtracking</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>.</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run auto-url='true' fontalignment='0' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;https://catalog.data.gov/dataset/united-states-drought-monitor-2000-2016&amp;quot;' underline='true'>https://catalog.data.gov/dataset/united-states-drought-monitor-2000-2016</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='61826' hidden='true' id='11' story-point-id='2' type-v2='text' w='17224' x='82776' y='36515'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12' italic='true'>Source:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12' italic='true'>Boschetti, L., Sparks, A., Roy, D.P., Giglio, L., San-Miguel-Ayanz, J., GWIS national and sub-national fire activity data from the NASA MODIS Collection 6 Burned Area Product in support of policy making, carbon inventories and natural resource management, developed under NASA Applied Sciences grant #80NSSC18K0400, Using the NASA Polar Orbiting Fire Product Record to Enhance and Expand the Global Wildfire Information System (GWIS).</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run auto-url='true' fontalignment='0' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads&amp;quot;' underline='true'>https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='39730' hidden='true' id='12' story-point-id='3' type-v2='text' w='17224' x='82677' y='55913'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Source:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>MIT Election Data and Science Lab, 2018, &quot;County Presidential Election Returns 2000-2020&quot;, </run>
+            <run auto-url='true' fontalignment='0' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;https://doi.org/10.7910/DVN/VOQCHQ&amp;quot;' underline='true'>https://doi.org/10.7910/DVN/VOQCHQ</run>
+            <run auto-url='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;,&amp;quot;'>,</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'> Harvard Dataverse, V10, UNF:6:pVAMya52q7VM1Pl7EZMW0Q== [fileUNF]</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run auto-url='true' fontalignment='0' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ&amp;quot;' underline='true'>https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{CFEF7D0B-1FB2-4C13-8A5A-56E70B53C913}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Story'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{FEFE6D4C-4817-4C38-BC8E-AEC0A5DA0AB1}' />
+    </window>
+    <window class='worksheet' name='Election Results Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{A63F690D-B0DE-4050-A6B9-92126F4C4377}' />
+    </window>
+    <window class='worksheet' name='Drought Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[sum:value:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{C92BFC09-44BC-4B42-9320-89D04A3BB358}' />
+    </window>
+    <window class='worksheet' name='Burned Area Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:index:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{287B6084-B69B-4AE5-A763-92D21B1D43FB}' />
+    </window>
+    <window class='worksheet' name='Burned Forest Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Forest_BA_hectares_index:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{68E320D0-3F78-4A7B-9818-1D3A265963D2}' />
+    </window>
+    <window class='worksheet' name='Burned Grassland Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Grass_and_Shrubland_BA_hectares_index:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{FD9809FE-BE22-498B-A31A-C004FD515711}' />
+    </window>
+    <window class='worksheet' name='Burned Cropland Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[avg:Cropland_BA_hectares_index:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{F32B4F76-32C1-4FCD-B596-D6129978E4C0}' />
+    </window>
+    <window class='worksheet' name='Burned Settlements Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[sum:Settlement_BA_hectares_index:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{371E4A65-85A7-42AD-9AE5-7D576D592875}' />
+    </window>
+    <window class='worksheet' name='Total Burned Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{75854EFA-E227-43D3-A541-9A7A7434D4EB}' />
+    </window>
+    <window class='worksheet' name='Burned Forest Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{924B0EAC-13D5-45EA-A073-A1628C6EEABE}' />
+    </window>
+    <window class='worksheet' name='Burned Grassland'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{F222C60B-6483-4708-9C82-5191494940C5}' />
+    </window>
+    <window class='worksheet' name='Burned Cropland'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{BA24E31B-089C-40D1-8512-D19727C49415}' />
+    </window>
+    <window class='worksheet' name='Burned Settlements'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{DC474840-95A0-4BEF-8433-E132777F7651}' />
+    </window>
+    <window class='worksheet' name='Burned Wetlands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{01F945E6-E299-4E01-A1CC-0AB871C4BA7D}' />
+    </window>
+    <window class='worksheet' name='Other Burned Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ifa75414temgr0ziqx7z057y6ys].[none:party:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2016-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{B1A69059-EB9F-46BE-AEEF-8DE63A85B727}' />
+    </window>
+  </windows>
+</workbook>
