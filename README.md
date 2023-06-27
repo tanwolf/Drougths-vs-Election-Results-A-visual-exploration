@@ -1,6 +1,6 @@
 # Drougths, Wildfires and Election Results - A visual exploration
 
-Project Description
+## Project Description
 
 Is there a connection between the occurence of local droughts, wildfires and the way people vote in national elections?
 
@@ -10,46 +10,35 @@ This project uses tableau and suggests a way of visualizing respective data in a
 
 The plots can be seen here:
 
-Germany:
+### Germany:
 https://public.tableau.com/app/profile/tanja.wolf/viz/Workbook_Drought_Wildfires_Elections_Germany/Story
 
-USA:
+### USA:
 https://public.tableau.com/app/profile/tanja.wolf/viz/Workbook_Drought_Wildfires_Elections_USA/Story?publish=yes
 
-Data sub-fields:
-Data Triangulation
-Data Modelling
-Geo Coding
-Dashboarding, interactive viz
-Insight Extraction
-
-Tools: 
-Tableau
-QGIS
-Python: pandas, netCDF4, pyproj, xarray
-
+-----
+## Data sub-fields:
+* Data Triangulation
+* Data Modelling
+* Geo Coding
+* Dashboarding, interactive viz
+* Insight Extraction
+-----
+## Tools: 
+* Tableau
+* QGIS
+* Python: pandas, netCDF4, pyproj, xarray
 ----
+## Data Sources
 
-Dataset / Source
-Germany:
+### Germany:
+* Drought Monitor: https://www.ufz.de/index.php?de=37937
+* Results of national Elections: https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/opendata.html#39734920-0eaf-4633-8858-ae792d5d610b
+* Geographic Data concerning electoral districts: https://www.bundeswahlleiter.de/bundestagswahlen/2021/wahlkreiseinteilung/downloads.html
 
-Drought Monitor:
-https://www.ufz.de/index.php?de=37937
+### USA:
+* Drought data by county: https://catalog.data.gov/dataset/united-states-drought-monitor-2000-2016
+* Presedential Elections, result by county: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ
 
-Elections:
-
-Results of national Elections:
-https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/opendata.html#39734920-0eaf-4633-8858-ae792d5d610b
-
-Geographic Data concerning electoral districts:
-https://www.bundeswahlleiter.de/bundestagswahlen/2021/wahlkreiseinteilung/downloads.html
-
-USA:
-Drought, values by county:
-https://catalog.data.gov/dataset/united-states-drought-monitor-2000-2016
-
-Presedential Elections, result by county:
-https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ
-
-Global Monthly Burned Area (2002-2019) (values by region)
-https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads
+### Global Monthly Burned Area (2002-2019):
+* Global data on burned area per federal state: https://gwis.jrc.ec.europa.eu/apps/country.profile/downloads
