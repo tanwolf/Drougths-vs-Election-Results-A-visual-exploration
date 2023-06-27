@@ -8,6 +8,14 @@ The goal of this project is to triangulate unrelated data from different sources
 
 This project uses tableau and suggests a way of visualizing respective data in animated filled maps and interactive scatterplots. 
 
+The plots can be seen here:
+
+Germany:
+https://public.tableau.com/app/profile/tanja.wolf/viz/Workbook_Drought_Wildfires_Elections_Germany/Story
+
+USA:
+https://public.tableau.com/app/profile/tanja.wolf/viz/Workbook_Drought_Wildfires_Elections_USA/Story?publish=yes
+
 Data sub-fields:
 Data Triangulation
 Data Modelling
