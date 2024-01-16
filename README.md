@@ -1,4 +1,4 @@
-# Drougths, Wildfires and Election Results - A Visual Exploration
+# Droughss, Wildfires and Election Results - A Visual Exploration
 
 ## Project Description
 
